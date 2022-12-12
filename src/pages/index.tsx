@@ -1,10 +1,12 @@
 import { requests } from 'libs/request';
 import type { NextPage } from 'next';
+import { Banner } from '@/components/Banner/Banner';
 import { Row } from '@/components/Row/Row';
 
 const Home: NextPage = () => {
   return (
     <>
+      <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}
