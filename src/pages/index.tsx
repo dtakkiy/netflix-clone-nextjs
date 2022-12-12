@@ -1,7 +1,7 @@
 import { requests } from 'libs/request';
 import type { NextPage } from 'next';
-import { Banner } from '@/components/Banner/Banner';
-import { Row } from '@/components/Row/Row';
+import { Banner } from '@/components/Banner';
+import { Row } from '@/components/Row';
 
 const Home: NextPage = () => {
   return (
