@@ -15,8 +15,10 @@ const Home: NextPage = () => {
         isLargeRow
       />
       <Row title="Top Rated" fetchUrl={requests.feactTopRated} />
+      <Row title="Drama Movies" fetchUrl={requests.feactDramaMovies} />
       <Row title="Comedy Movies" fetchUrl={requests.feactComedyMovies} />
       <Row title="Romance Movies" fetchUrl={requests.feactRomanceMovies} />
+      <Row title="Animation Movies" fetchUrl={requests.feactAnimationMovies} />
       <Row title="Documentaries" fetchUrl={requests.feactDocumentMovies} />{' '}
     </>
   );
