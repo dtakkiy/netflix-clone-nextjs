@@ -47,19 +47,19 @@ export const Banner = () => {
           backgroundPosition: 'center center',
         }}
       >
-        <div className={styles.banner_contents}>
-          <h1 className={styles.banner_title}>
+        <div className={styles.contents}>
+          <h1 className={styles.title}>
             {movie?.title || movie?.name || movie?.original_name}
           </h1>
-          <div className={styles.banner_buttons}>
-            <button className={styles.banner_button}>Play</button>
-            <button className={styles.banner_button}>My List</button>
+          <div className={styles.buttons}>
+            <button className={styles.button}>Play</button>
+            <button className={styles.button}>My List</button>
           </div>
-          <h1 className={styles.banner_description}>
+          <h1 className={styles.description}>
             {truncate(movie?.overview, MAX_DESCRIPTION)}
           </h1>
         </div>
-        <div className={styles.banner_fadeBottom} />
+        <div className={styles.fadeBottom} />
       </header>
     </>
   );

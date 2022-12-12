@@ -65,7 +65,7 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
   return (
     <div className={styles.row}>
       <h2>{title}</h2>
-      <div className={styles.row_posters}>
+      <div className={styles.posters}>
         {movies.map((movie, i) => (
           <img
             key={movie.id}
