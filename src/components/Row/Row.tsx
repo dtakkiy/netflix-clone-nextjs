@@ -18,8 +18,6 @@ type Movie = {
 };
 
 type Options = {
-  height: string;
-  width: string;
   playerVars: {
     autoplay: 0 | 1 | undefined;
   };
@@ -30,12 +28,8 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
   const [trailerUrl, setTrailerUrl] = useState<string | null>('');
 
   const base_url = 'https://image.tmdb.org/t/p/original';
-  const iframe_height = '390';
-  const iframe_width = '640';
 
   const opts: Options = {
-    height: iframe_height,
-    width: iframe_width,
     playerVars: {
       autoplay: 1,
     },
@@ -82,7 +76,13 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
           />
         ))}
       </div>
-      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+      {trailerUrl && (
+        <YouTube
+          videoId={trailerUrl}
+          opts={opts}
+          iframeClassName={styles.youtube}
+        />
+      )}
     </div>
   );
 };
