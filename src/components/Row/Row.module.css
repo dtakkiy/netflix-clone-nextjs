@@ -33,3 +33,15 @@
 .poster_large:hover {
     transform: scale(1.29);
 }
+
+.youtube {
+    width: 370px;
+    height: 210px;
+}
+
+@media (min-width: 768px) {
+    .youtube {
+        height: 390px;
+        width: 640px;
+    }
+}
